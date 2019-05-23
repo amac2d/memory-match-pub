@@ -47,6 +47,15 @@ div.lfz-card {
     background-position: center;
     background-image: url(assets/images/lfz-card.jpg);
 }
+div.pic-card {
+    height: 120px;
+    width: 120px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url(assets/images/dan.jpg);
+
+}
 
 /*div.front-card {*/
 /*    height: 100px;*/
