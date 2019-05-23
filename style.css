@@ -1,0 +1,68 @@
+body {
+    border: 1px solid black;
+    height: 700px;
+    background-color: beige;
+}
+header {
+    border: 1px solid black;
+    text-align: center;
+    font-size: 50px;
+    height: 100px;
+}
+.statsContainer {
+    border: 2px solid darkred;
+    text-align: center;
+    display: inline-block;
+    height: 550px;
+    width: 200px;
+}
+span {margin: auto;}
+.stats {
+    font-size: 1.5rem;
+    border: 1px solid #2cbb26;
+    height: 80px;
+    display: flex;
+    margin: 5px;
+}
+main {
+    display: inline-block;
+    border: 3px solid cornflowerblue;
+    height: 550px;
+    width: 800px;
+    vertical-align: top;
+}
+
+.cardContainer {
+    border: 1px solid blue;
+    height: 32%;
+    margin: 4px;
+}
+.card {display: inline-block;height: 90%;width: 15%;border: 1px solid red;margin: 3px;}
+
+div.lfz-card {
+    height: 120px;
+    width: 120px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url(assets/images/lfz-card.jpg);
+}
+div.pic-card {
+    height: 120px;
+    width: 120px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url(assets/images/dan.jpg);
+
+}
+
+/*div.front-card {*/
+/*    height: 100px;*/
+/*    width: 100px;*/
+/*    background-size: cover;*/
+/*    background-repeat: no-repeat;*/
+/*    background-position: center;*/
+/*    background-image: url(assets/images/dan.jpg);*/
+
+/*}*/
