@@ -50,15 +50,46 @@ div.lfz-card {
     position: absolute;
 }
 
-div.pic-card {
+div.dan-card {
     height: 120px;
     width: 120px;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     background-image: url(assets/images/dan.jpg);
+    position: absolute;
 }
+
+div.andy-card {
+    height: 120px;
+    width: 120px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url(assets/images/andy.jpg);
+    position: absolute;
+}
+
 
 .hidden {
     display: none;
 }
+
+/*div.lfz-card {*/
+/*    height: 120px;*/
+/*    width: 120px;*/
+/*    background-size: cover;*/
+/*    background-repeat: no-repeat;*/
+/*    background-position: center;*/
+/*    background-image: url(assets/images/lfz-card.jpg);*/
+/*    position: absolute;*/
+/*}*/
+
+/*div.pic-card {*/
+/*    height: 120px;*/
+/*    width: 120px;*/
+/*    background-size: cover;*/
+/*    background-repeat: no-repeat;*/
+/*    background-position: center;*/
+/*    background-image: url(assets/images/dan.jpg);*/
+/*}*/
