@@ -2,6 +2,10 @@ body {
     border: 1px solid black;
     height: 700px;
     background-color: beige;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url(assets/images/blind-robot.jpg);
 }
 header {
     border: 1px solid black;
@@ -10,7 +14,7 @@ header {
     height: 100px;
 }
 .statsContainer {
-    border: 2px solid darkred;
+    border: 2px solid cornflowerblue;
     text-align: center;
     display: inline-block;
     height: 550px;
@@ -19,40 +23,54 @@ header {
 span {margin: auto;}
 .stats {
     font-size: 1.5rem;
-    border: 1px solid #2cbb26;
-    height: 80px;
+    border: 1px solid blue;
+    height: 76px;
     display: flex;
     margin: 5px;
+    background-color: cornflowerblue;
+    opacity: .8;
 }
 main {
     display: inline-block;
-    border: 3px solid cornflowerblue;
+    border: 2px solid cornflowerblue;
     height: 550px;
     width: 800px;
     vertical-align: top;
 }
 
 .cardContainer {
-    border: 1px solid blue;
+    /*border: 1px solid blue;*/
     height: 32%;
     margin: 4px;
     position: relative;
 }
-.card {display: inline-block;height: 90%;width: 15%;border: 1px solid red;margin: 3px;}
+.card {
+    display: inline-block;
+    height: 90%;
+    width: 15%;
+    /*border: 1px solid red;*/
+    margin: 3px;
+}
+.front {
+    height: 90%;
+    width: 120px;
+}
 
 div.lfz-card {
-    height: 120px;
-    width: 120px;
+    /* height: 120px; */
+    /* width: 120px; */
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     background-image: url(assets/images/lfz-card.jpg);
     position: absolute;
+    height: 90%;
+    width: 120px;
 }
 
 div.dan-card {
-    height: 120px;
-    width: 120px;
+    /*height: 120px;*/
+    /*width: 120px;*/
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -61,8 +79,8 @@ div.dan-card {
 }
 
 div.andy-card {
-    height: 120px;
-    width: 120px;
+    /*height: 120px;*/
+    /*width: 120px;*/
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -70,8 +88,8 @@ div.andy-card {
     position: absolute;
 }
 div.bill-card {
-    height: 120px;
-    width: 120px;
+    /*height: 120px;*/
+    /*width: 120px;*/
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -79,8 +97,8 @@ div.bill-card {
     position: absolute;
 }
 div.brett-card {
-    height: 120px;
-    width: 120px;
+    /*height: 120px;*/
+    /*width: 120px;*/
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -88,8 +106,8 @@ div.brett-card {
     position: absolute;
 }
 div.cody-card {
-    height: 120px;
-    width: 120px;
+    /*height: 120px;*/
+    /*width: 120px;*/
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -97,8 +115,8 @@ div.cody-card {
     position: absolute;
 }
 div.scott-card {
-    height: 120px;
-    width: 120px;
+    /*height: 120px;*/
+    /*width: 120px;*/
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -106,8 +124,8 @@ div.scott-card {
     position: absolute;
 }
 div.timD-card {
-    height: 120px;
-    width: 120px;
+    /*height: 120px;*/
+    /*width: 120px;*/
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -115,8 +133,8 @@ div.timD-card {
     position: absolute;
 }
 div.timH-card {
-    height: 120px;
-    width: 120px;
+    /*height: 120px;*/
+    /*width: 120px;*/
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -124,8 +142,8 @@ div.timH-card {
     position: absolute;
 }
 div.tj-card {
-    height: 120px;
-    width: 120px;
+    /*height: 120px;*/
+    /*width: 120px;*/
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;

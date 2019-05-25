@@ -2,9 +2,9 @@
 var firstCardClicked = null;
 var secondCardClicked = null;
 var matches = null;
-var imgCard1 = null;
-var imgCard2 = null;
 var max_matches = 9;
+var attempts = null;
+var games_played = null;
 
 
 $(document).ready(initialize);
@@ -43,40 +43,31 @@ function initialize() {
 
 
 function handleCardClick(event) {
-    console.log('clicked!');
-    console.log('event.target is:', event.target);
-    $(event.target).addClass('hidden');
+    $(event.currentTarget).find('.back').addClass('hidden');
+
 
 
     if (firstCardClicked === null) {
         firstCardClicked = $(event.currentTarget);
-        console.log('event.target:', $(event.currentTarget)); //prev()
-
-
-        imgCard1 = firstCardClicked.find('.front').css('background-image');
-        console.log('imgCard1 CSS img url:', imgCard1);
-
-
-
     }
-     else if (secondCardClicked === null) {
+     else if (secondCardClicked === null) { //just make it an else statement
         secondCardClicked = $(event.currentTarget);
-        imgCard2 = secondCardClicked.find('.front').css('background-image');
-        console.log('imgCard2 CSS img url:', imgCard2);
+        var imgCard1 = firstCardClicked.find('.front').css('background-image');
+        var imgCard2 = secondCardClicked.find('.front').css('background-image');
         if ( imgCard1 === imgCard2 ) {
-            console.log('it Matches!!!!!!!!!!!!!');
             matches++;
             firstCardClicked = null;
             secondCardClicked = null;
-
         }
         else if (imgCard1 !== imgCard2) {
             setTimeout(flipCardsBack, 1500);
+            attempts++;
         }
+        displayStats();
     }
      if (matches === max_matches) {
-         console.log('You won!!!');
          $('#myModal').css('display', 'block');
+         games_played++;
      }
 
 }
@@ -88,4 +79,18 @@ function flipCardsBack() {
     secondCardClicked = null;
 }
 
+function calculateAccuracy() {
+    var percentAccuracy = matches / (matches + attempts) * 100;
+    return percentAccuracy.toFixed(2);
+
+}
+
+function displayStats() {
+    var accuracy = calculateAccuracy();
+    $('.attempts').text(attempts);
+    $('.accuracy').text(accuracy + '%');
+    if (games_played) {
+        $('.gamesPlayed').text(games_played);
+    }
+}
 
