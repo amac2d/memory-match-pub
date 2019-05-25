@@ -108,7 +108,7 @@ function resetStats() {
     games_played++;
     displayStats();
     $('.back').removeClass('hidden');
-    modal.style.display = "none";
 
+    $('#myModal').hide();
 
 }
