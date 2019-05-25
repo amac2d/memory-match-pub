@@ -1,24 +1,25 @@
 body {
-    border: 1px solid black;
     height: 700px;
-    background-color: beige;
+    width: 1050px;
+    margin: auto;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     background-image: url(assets/images/blind-robot.jpg);
 }
 header {
-    border: 1px solid black;
     text-align: center;
     font-size: 50px;
     height: 100px;
 }
 .statsContainer {
     border: 2px solid cornflowerblue;
+    color: aquamarine;
     text-align: center;
     display: inline-block;
     height: 550px;
     width: 200px;
+    font-size: 1.25rem;
 }
 span {margin: auto;}
 .stats {
@@ -191,10 +192,15 @@ div.tj-card {
 /* Modal Content/Box */
 .modal-content {
     background-color: #fefefe;
+    background-image: url("assets/images/blind-robot.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
     margin: 15% auto; /* 15% from the top and centered */
     padding: 20px;
     border: 1px solid #888;
-    width: 80%; /* Could be more or less, depending on screen size */
+    width: 30%; /* Could be more or less, depending on screen size */
+    height: 25%;
 }
 
 /* The Close Button */
@@ -209,5 +215,21 @@ div.tj-card {
 .close:focus {
     color: black;
     text-decoration: none;
+    cursor: pointer;
+}
+.modalTextContent {
+    color: yellow;
+    text-align: center;
+    height: 60%;
+    font-size: 1.7rem;
+}
+#resetButton {
+    display: block;
+    margin: auto;
+}
+
+#resetButton:hover {
+    color: white;
+    background-color: cornflowerblue;
     cursor: pointer;
 }
