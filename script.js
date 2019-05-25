@@ -11,7 +11,7 @@ $(document).ready(initialize);
 
 function initialize() {
     console.log('Initialized!');
-    $('.card').click(handleCardClick);
+    $('.card').bind('click', handleCardClick);
 
     // Get the modal
     var modal = document.getElementById("myModal");
@@ -39,6 +39,9 @@ function initialize() {
         }
     };
 
+
+    $('#resetButton').click(resetStats);
+
 }
 
 
@@ -60,6 +63,7 @@ function handleCardClick(event) {
             secondCardClicked = null;
         }
         else if (imgCard1 !== imgCard2) {
+            $('.card').unbind();
             setTimeout(flipCardsBack, 1500);
             attempts++;
         }
@@ -67,7 +71,6 @@ function handleCardClick(event) {
     }
      if (matches === max_matches) {
          $('#myModal').css('display', 'block');
-         games_played++;
      }
 
 }
@@ -77,12 +80,15 @@ function flipCardsBack() {
     secondCardClicked.find('.back').removeClass('hidden');
     firstCardClicked = null;
     secondCardClicked = null;
+    $('.card').bind('click', handleCardClick);
 }
 
 function calculateAccuracy() {
     var percentAccuracy = matches / (matches + attempts) * 100;
-    return percentAccuracy.toFixed(2);
-
+    if (percentAccuracy) {
+        return parseInt(percentAccuracy);
+    }
+    else return 0;
 }
 
 function displayStats() {
@@ -94,3 +100,15 @@ function displayStats() {
     }
 }
 
+function resetStats() {
+    firstCardClicked = null;
+    secondCardClicked = null;
+    matches = null;
+    attempts = 0;
+    games_played++;
+    displayStats();
+    $('.back').removeClass('hidden');
+
+    $('#myModal').hide();
+
+}
