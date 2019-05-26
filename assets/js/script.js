@@ -11,6 +11,7 @@ $(document).ready(initialize);
 
 function initialize() {
     console.log('Initialized!');
+    shuffleCards();
     $('.card').bind('click', handleCardClick);
     $('#myBtn').bind('click', showResetModal);
     $('.close').bind('click', closeModal);
@@ -98,4 +99,29 @@ function resetStats() {
     $('.back').removeClass('hidden');
     closeModal();
 
+}
+
+function shuffleCards() {
+    var frontCards = [
+        'andy-card front', 'andy-card front', 'bill-card front', 'bill-card front', 'brett-card front',
+        'brett-card front', 'cody-card front', 'cody-card front', 'dan-card front', 'dan-card front',
+        'scott-card front', 'scott-card front', 'timD-card front', 'timD-card front', 'timH-card front',
+        'timH-card front', 'tj-card front', 'tj-card front'];
+
+    var shuffledFrontCards = frontCards.sort(function(a, b){return 0.5 - Math.random()});
+
+    var mainElement = $('main');
+
+    for (var indexCardContainer = 0 ; indexCardContainer < 3 ; indexCardContainer++) {
+        var divCardContainer = $('<div>').addClass('cardContainer');
+
+        for (var indexCards = 0 ; indexCards < 6 ; indexCards++){
+            var divCard = $('<div>').addClass('card');
+            var divFrontCard = $('<div>').addClass(shuffledFrontCards.pop());
+            var divBackCard = $('<div>').addClass('lfz-card back');
+            divCard.append(divFrontCard, divBackCard);
+            divCardContainer.append(divCard);
+        }
+        mainElement.append(divCardContainer);
+    }
 }
