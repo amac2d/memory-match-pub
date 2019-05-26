@@ -7,11 +7,13 @@ body {
     background-position: center;
     background-image: url(assets/images/blind-robot.jpg);
 }
+
 header {
     text-align: center;
     font-size: 50px;
     height: 100px;
 }
+
 .statsContainer {
     border: 2px solid cornflowerblue;
     color: aquamarine;
@@ -21,7 +23,11 @@ header {
     width: 200px;
     font-size: 1.25rem;
 }
-span {margin: auto;}
+
+.stats > span {
+    margin: auto;
+}
+
 .stats {
     font-size: 1.5rem;
     border: 1px solid blue;
@@ -31,6 +37,7 @@ span {margin: auto;}
     background-color: cornflowerblue;
     opacity: .8;
 }
+
 main {
     display: inline-block;
     border: 2px solid cornflowerblue;
@@ -40,26 +47,28 @@ main {
 }
 
 .cardContainer {
-    /*border: 1px solid blue;*/
     height: 32%;
     margin: 4px;
     position: relative;
 }
+
 .card {
     display: inline-block;
     height: 90%;
     width: 15%;
-    /*border: 1px solid red;*/
     margin: 3px;
 }
+
 .front {
     height: 90%;
     width: 120px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: absolute;
 }
 
 div.lfz-card {
-    /* height: 120px; */
-    /* width: 120px; */
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -70,140 +79,73 @@ div.lfz-card {
 }
 
 div.dan-card {
-    /*height: 120px;*/
-    /*width: 120px;*/
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
     background-image: url(assets/images/dan.jpg);
-    position: absolute;
 }
 
 div.andy-card {
-    /*height: 120px;*/
-    /*width: 120px;*/
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
     background-image: url(assets/images/andy.jpg);
-    position: absolute;
 }
+
 div.bill-card {
-    /*height: 120px;*/
-    /*width: 120px;*/
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
     background-image: url(assets/images/bill.jpg);
-    position: absolute;
 }
+
 div.brett-card {
-    /*height: 120px;*/
-    /*width: 120px;*/
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
     background-image: url(assets/images/brett.jpg);
-    position: absolute;
 }
+
 div.cody-card {
-    /*height: 120px;*/
-    /*width: 120px;*/
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
     background-image: url(assets/images/cody.jpg);
-    position: absolute;
 }
+
 div.scott-card {
-    /*height: 120px;*/
-    /*width: 120px;*/
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
     background-image: url(assets/images/scott.jpg);
-    position: absolute;
 }
+
 div.timD-card {
-    /*height: 120px;*/
-    /*width: 120px;*/
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
     background-image: url(assets/images/tim-d.jpg);
-    position: absolute;
 }
+
 div.timH-card {
-    /*height: 120px;*/
-    /*width: 120px;*/
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
     background-image: url(assets/images/tim-h.jpg);
-    position: absolute;
 }
+
 div.tj-card {
-    /*height: 120px;*/
-    /*width: 120px;*/
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
     background-image: url(assets/images/tj.jpg);
-    position: absolute;
 }
 
 .hidden {
     display: none;
 }
 
-/*div.lfz-card {*/
-/*    height: 120px;*/
-/*    width: 120px;*/
-/*    background-size: cover;*/
-/*    background-repeat: no-repeat;*/
-/*    background-position: center;*/
-/*    background-image: url(assets/images/lfz-card.jpg);*/
-/*    position: absolute;*/
-/*}*/
-
-/*div.pic-card {*/
-/*    height: 120px;*/
-/*    width: 120px;*/
-/*    background-size: cover;*/
-/*    background-repeat: no-repeat;*/
-/*    background-position: center;*/
-/*    background-image: url(assets/images/dan.jpg);*/
-/*}*/
-
-/* The Modal (background) */
 .modal {
-    display: none; /* Hidden by default */
-    position: fixed; /* Stay in place */
-    z-index: 1; /* Sit on top */
+    display: none;
+    position: fixed;
     left: 0;
     top: 0;
-    width: 100%; /* Full width */
-    height: 100%; /* Full height */
-    overflow: auto; /* Enable scroll if needed */
-    background-color: rgb(0,0,0); /* Fallback color */
-    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    width: 100vw;
+    height: 100vh;
+    background-color: black;
+    opacity: .5;
 }
 
-/* Modal Content/Box */
 .modal-content {
-    background-color: #fefefe;
     background-image: url("assets/images/blind-robot.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    margin: 15% auto; /* 15% from the top and centered */
+    margin: 15% auto;
     padding: 20px;
     border: 1px solid #888;
-    width: 30%; /* Could be more or less, depending on screen size */
+    width: 30%;
     height: 25%;
+    position: absolute;
+    left: 50%;
+    top: 10%;
+    transform: translateX(-50%) translateY(-50%);
+    display: none;
 }
 
-/* The Close Button */
 .close {
     color: #aaa;
     float: right;
