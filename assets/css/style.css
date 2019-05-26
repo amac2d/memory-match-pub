@@ -1,1 +1,177 @@
+body {
+    height: 700px;
+    width: 1050px;
+    margin: auto;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url(../images/blind-robot.jpg);
+}
 
+header {
+    text-align: center;
+    font-size: 50px;
+    height: 100px;
+}
+
+.statsContainer {
+    border: 2px solid cornflowerblue;
+    color: aquamarine;
+    text-align: center;
+    display: inline-block;
+    height: 550px;
+    width: 200px;
+    font-size: 1.25rem;
+}
+
+.stats > span {
+    margin: auto;
+}
+
+.stats {
+    font-size: 1.5rem;
+    border: 1px solid blue;
+    height: 76px;
+    display: flex;
+    margin: 5px;
+    background-color: cornflowerblue;
+    opacity: .8;
+}
+
+main {
+    display: inline-block;
+    border: 2px solid cornflowerblue;
+    height: 550px;
+    width: 800px;
+    vertical-align: top;
+}
+
+.cardContainer {
+    height: 32%;
+    margin: 4px;
+    position: relative;
+}
+
+.card {
+    display: inline-block;
+    height: 90%;
+    width: 15%;
+    margin: 3px;
+}
+
+.front {
+    height: 90%;
+    width: 120px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: absolute;
+}
+
+div.lfz-card {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url(../images/lfz-card.jpg);
+    position: absolute;
+    height: 90%;
+    width: 120px;
+}
+
+div.dan-card {
+    background-image: url(../images/dan.jpg);
+}
+
+div.andy-card {
+    background-image: url(../images/andy.jpg);
+}
+
+div.bill-card {
+    background-image: url(../images/bill.jpg);
+}
+
+div.brett-card {
+    background-image: url(../images/brett.jpg);
+}
+
+div.cody-card {
+    background-image: url(../images/cody.jpg);
+}
+
+div.scott-card {
+    background-image: url(../images/scott.jpg);
+}
+
+div.timD-card {
+    background-image: url(../images/tim-d.jpg);
+}
+
+div.timH-card {
+    background-image: url(../images/tim-h.jpg);
+}
+
+div.tj-card {
+    background-image: url(../images/tj.jpg);
+}
+
+.hidden {
+    display: none;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: black;
+    opacity: .5;
+}
+
+.modal-content {
+    background-image: url("../images/blind-robot.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 30%;
+    height: 25%;
+    position: absolute;
+    left: 50%;
+    top: 10%;
+    transform: translateX(-50%) translateY(-50%);
+    display: none;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+.modalTextContent {
+    color: yellow;
+    text-align: center;
+    height: 60%;
+    font-size: 1.7rem;
+}
+#resetButton {
+    display: block;
+    margin: auto;
+}
+
+#resetButton:hover {
+    color: white;
+    background-color: cornflowerblue;
+    cursor: pointer;
+}
