@@ -10,9 +10,7 @@ var games_played = null;
 $(document).ready(initialize);
 
 function initialize() {
-    console.log('Initialized!');
     shuffleCards();
-    $('.card').bind('click', handleCardClick);
     $('#myBtn').bind('click', showResetModal);
     $('.close').bind('click', closeModal);
     $('#myModal').bind('click', closeModal);
@@ -97,6 +95,8 @@ function resetStats() {
     games_played++;
     displayStats();
     $('.back').removeClass('hidden');
+    $('main *').remove();
+    shuffleCards();
     closeModal();
 
 }
@@ -124,4 +124,5 @@ function shuffleCards() {
         }
         mainElement.append(divCardContainer);
     }
+    $('.card').bind('click', handleCardClick);
 }

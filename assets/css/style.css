@@ -130,6 +130,7 @@ div.tj-card {
 }
 
 .modal-content {
+    background-color: black;
     background-image: url("../images/blind-robot.jpg");
     background-size: cover;
     background-repeat: no-repeat;
