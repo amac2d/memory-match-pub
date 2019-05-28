@@ -39,7 +39,8 @@ function handleCardClick(event) {
         $(event.currentTarget).find('.back').addClass('hidden');
         if (firstCardClicked === null) {
             firstCardClicked = $(event.currentTarget);
-        } else if (secondCardClicked === null) { //just make it an else statement
+        }
+        else {
             secondCardClicked = $(event.currentTarget);
             var imgCard1 = firstCardClicked.find('.front').css('background-image');
             var imgCard2 = secondCardClicked.find('.front').css('background-image');
@@ -47,7 +48,8 @@ function handleCardClick(event) {
                 matches++;
                 firstCardClicked = null;
                 secondCardClicked = null;
-            } else if (imgCard1 !== imgCard2) {
+            }
+            else {
                 $('.card').unbind();
                 setTimeout(flipCardsBack, 1500);
                 attempts++;
@@ -94,22 +96,18 @@ function resetStats() {
     attempts = 0;
     games_played++;
     displayStats();
-    $('.back').removeClass('hidden');
     $('main *').remove();
     shuffleCards();
     closeModal();
-
 }
 
 function shuffleCards() {
-    var frontCards = [
-        'andy-card front', 'andy-card front', 'bill-card front', 'bill-card front', 'brett-card front',
-        'brett-card front', 'cody-card front', 'cody-card front', 'dan-card front', 'dan-card front',
-        'scott-card front', 'scott-card front', 'timD-card front', 'timD-card front', 'timH-card front',
-        'timH-card front', 'tj-card front', 'tj-card front'];
+    var frontCards = ['andy-card front', 'andy-card front', 'bill-card front', 'bill-card front', 'brett-card front',
+                      'brett-card front', 'cody-card front', 'cody-card front', 'dan-card front', 'dan-card front',
+                      'scott-card front', 'scott-card front', 'timD-card front', 'timD-card front', 'timH-card front',
+                      'timH-card front', 'tj-card front', 'tj-card front'];
 
     var shuffledFrontCards = frontCards.sort(function(a, b){return 0.5 - Math.random()});
-
     var mainElement = $('main');
 
     for (var indexCardContainer = 0 ; indexCardContainer < 3 ; indexCardContainer++) {
