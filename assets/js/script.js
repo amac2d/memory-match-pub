@@ -102,10 +102,15 @@ function resetStats() {
 }
 
 function shuffleCards() {
-    var frontCards = ['andy-card front', 'andy-card front', 'bill-card front', 'bill-card front', 'brett-card front',
-                      'brett-card front', 'cody-card front', 'cody-card front', 'dan-card front', 'dan-card front',
-                      'scott-card front', 'scott-card front', 'timD-card front', 'timD-card front', 'timH-card front',
-                      'timH-card front', 'tj-card front', 'tj-card front'];
+    // var frontCards = ['andy-card front', 'andy-card front', 'bill-card front', 'bill-card front', 'brett-card front',
+    //                   'brett-card front', 'cody-card front', 'cody-card front', 'dan-card front', 'dan-card front',
+    //                   'scott-card front', 'scott-card front', 'timD-card front', 'timD-card front', 'timH-card front',
+    //                   'timH-card front', 'tj-card front', 'tj-card front'];
+
+    var frontCards = ['eg6-card front', 'eg6-card front', 'ek9-card front', 'ek9-card front', 'enkei92-card front', 
+                      'enkei92-card front', 'miata-card front', 'miata-card front', 'r32-card front', 'r32-card front', 
+                      'r34-card front', 'r34-card front', 'rpf1-card front', 'rpf1-card front', 's2k-card front', 
+                      's2k-card front', 's13-card front', 's13-card front'];
 
     var shuffledFrontCards = frontCards.sort(function(a, b){return 0.5 - Math.random()});
     var mainElement = $('main');
