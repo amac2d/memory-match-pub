@@ -4,7 +4,7 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  background-image: url(../images/track-wallpaper.jpg);
+  background: linear-gradient(rgba(255,255,255,.3),rgba(255,255,255,.3)),url(../images/track-wallpaper.jpg);
 }
 
 header {
@@ -74,10 +74,12 @@ div.lfz-card {
   height: 90%;
   width: 12vw;
   background-color: black;
+  border: solid blue 1px;
 }
 
 div.lfz-card:hover {
   background-size: cover;
+  border: solid red 2px;
 }
 
 div.dan-card {
