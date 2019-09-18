@@ -4,55 +4,63 @@
 }
 
 body {
-  height: 98vh;
-  width: 98vw;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
   background: linear-gradient(rgba(255,255,255,.3),rgba(255,255,255,.3)),url(../images/track-wallpaper.jpg);
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
+  margin: 0;
 }
+
+body {}
 
 header {
   text-align: center;
-  font-size: 7vh;
-  color: red;
+  font-size: 5vw;
+  color: tomato;
   font-family: formula1RegularFont;
   /* border: solid 1px chartreuse; */
-  height: 10%;
+  height: 10vh;
   width: 100%;
 }
 
 .statsContainer {
-  color: blue;
-  text-align: center;
-  /* display: inline-block; */
-  height: 89%;
-  width: 14%;
-  font-size: 3vw;
+  font-size: 2vw;
   font-family: formula1RegularFont;
+  display: flex;
   /* border: solid 1px chartreuse; */
+  justify-content: space-evenly;
+  height: 5vh;
 }
 
 .stats > span {
-  margin: auto;
+  /* margin: auto; */
 }
 
 .stats {
-  font-size: 70%;
-  height: 14%;
+  /* font-size: 70%; */
+  /* height: 14%; */
   display: flex;
-  margin: 5px;
-  background-color: cornflowerblue;
+  /* margin: 5px; */
+  /* background-color: cornflowerblue; */
   opacity: .8;
+}
+
+.gamesPlayedStat {
+  color: crimson;
+}
+
+.attemptsStat {
+  color: yellow;
+}
+
+.accuracyStat {
+  color: lawngreen;
 }
 
 main {
   display: inline-block;
-  height: 89%;
-  width: 86%;
+  height: 85vh;
+  /* width: 86%; */
   vertical-align: top;
   /* border: solid 1px chartreuse; */
   display: flex;
@@ -64,10 +72,9 @@ main {}
 
 .cardContainer {
   height: 33.33%;
-  /* width: 80vw; */
   position: relative;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
 }
 
 .card {
@@ -83,7 +90,7 @@ main {}
   background-position: center;
   position: absolute;
   background-color: black;
-  border-radius: 25px;
+  border-radius: 8px;
 }
 
 div.lfz-card {
@@ -95,7 +102,7 @@ div.lfz-card {
   height: 90%;
   width: 14%;
   background-color: black;
-  border-radius: 25px;
+  border-radius: 8px;
 }
 
 div.lfz-card:hover {
@@ -200,7 +207,7 @@ div.lfz-card:hover {
 
 .modal-content {
   background-color: black;
-  background: linear-gradient(rgba(255,255,255,.15),rgba(255,255,255,.15)),url(../images/track-wallpaper.jpg);
+  background: linear-gradient(rgba(255,255,255,.6),rgba(255,255,255,.6)),url(../images/finish.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -230,7 +237,7 @@ div.lfz-card:hover {
   cursor: pointer;
 }
 .modalTextContent {
-  color: crimson;
+  color: black;
   text-align: center;
   height: 60%;
   font-size: 1.7rem;
@@ -245,4 +252,12 @@ div.lfz-card:hover {
   color: white;
   background-color: cornflowerblue;
   cursor: pointer;
+}
+
+#myBtn {
+  color: black;
+}
+
+.myBtnDiv {
+  text-align: center;
 }
