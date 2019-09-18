@@ -57,10 +57,13 @@ main {
   /* border: solid 1px chartreuse; */
   display: flex;
   flex-direction: column;
+  /* justify-content: space-around; */
 }
 
+main {}
+
 .cardContainer {
-  height: 29vh;
+  height: 33.33%;
   /* width: 80vw; */
   position: relative;
   display: flex;
@@ -70,12 +73,12 @@ main {
 .card {
   /* display: flex; */
   height: 90%;
-  width: 15%;
+  width: 14%;
 }
 
 .front {
   height: 90%;
-  width: 12vw;
+  width: 14%;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -90,7 +93,7 @@ div.lfz-card {
   background-image: url(../images/f1-logo.jpg);
   position: absolute;
   height: 90%;
-  width: 12vw;
+  width: 14%;
   background-color: black;
   border: solid blue 1px;
 }
