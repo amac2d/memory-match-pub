@@ -10,23 +10,30 @@ body {
   background-repeat: no-repeat;
   background-position: center;
   background: linear-gradient(rgba(255,255,255,.3),rgba(255,255,255,.3)),url(../images/track-wallpaper.jpg);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
 }
 
 header {
   text-align: center;
-  font-size: 5vw;
+  font-size: 7vh;
   color: red;
   font-family: formula1RegularFont;
+  /* border: solid 1px chartreuse; */
+  height: 10%;
+  width: 100%;
 }
 
 .statsContainer {
   color: blue;
   text-align: center;
-  display: inline-block;
-  height: 88vh;
-  width: 14vw;
+  /* display: inline-block; */
+  height: 89%;
+  width: 14%;
   font-size: 3vw;
   font-family: formula1RegularFont;
+  /* border: solid 1px chartreuse; */
 }
 
 .stats > span {
@@ -44,22 +51,26 @@ header {
 
 main {
   display: inline-block;
-  height: 88vh;
-  width: 82vw;
+  height: 89%;
+  width: 86%;
   vertical-align: top;
+  /* border: solid 1px chartreuse; */
+  display: flex;
+  flex-direction: column;
 }
 
 .cardContainer {
   height: 29vh;
-  width: 82vw;
+  /* width: 80vw; */
   position: relative;
-  display: inline-block;
+  display: flex;
+  justify-content: space-around;
 }
 
 .card {
-  display: inline-block;
+  /* display: flex; */
   height: 90%;
-  width: 13.5vw;
+  width: 15%;
 }
 
 .front {
