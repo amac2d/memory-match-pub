@@ -71,7 +71,6 @@ main {}
 }
 
 .card {
-  /* display: flex; */
   height: 90%;
   width: 14%;
 }
@@ -84,6 +83,7 @@ main {}
   background-position: center;
   position: absolute;
   background-color: black;
+  border-radius: 25px;
 }
 
 div.lfz-card {
@@ -95,7 +95,7 @@ div.lfz-card {
   height: 90%;
   width: 14%;
   background-color: black;
-  border: solid blue 1px;
+  border-radius: 25px;
 }
 
 div.lfz-card:hover {
