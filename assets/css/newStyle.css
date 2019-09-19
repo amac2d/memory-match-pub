@@ -239,7 +239,7 @@ div.lfz-card:hover {
 .modalTextContent {
   color: crimson;
   text-align: center;
-  height: 25%;
+  height: 15%;
   font-size: 1.7rem;
   font-family: formula1RegularFont;
 }
@@ -247,16 +247,17 @@ div.lfz-card:hover {
   display: block;
   margin: auto;
   height: 50%;
-  background: linear-gradient(rgba(255,255,255,.25),rgba(255,255,255,.25)),url(../images/ignition.jpg);
+  background: url(../images/ignition.png);
   background-repeat: no-repeat;
-  background-size: cover;
-  color: palegoldenrod;
-  font-size: 5vh;
+  background-size: contain;
+  height: 45%;
+  width: 20%;
+  border-radius: 50px;
+  border: 0;
 }
 
 #resetButton:hover {
-  color: white;
-  background-color: cornflowerblue;
+  border: solid 2px black;
   cursor: pointer;
 }
 
@@ -266,4 +267,10 @@ div.lfz-card:hover {
 
 .myBtnDiv {
   text-align: center;
+}
+
+.resetText {
+  color: coral;
+  text-align: center;
+  height: 15%;
 }
