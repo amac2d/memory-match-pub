@@ -20,13 +20,13 @@ function initialize() {
 function showWinModal() {
     $('#myModal').show();
     $('.modal-content').show();
-    $('.modalTextContent').text('Congratulations, you\'ve won!!!');
+    // $('.modalTextContent').text('Congratulations!!!');
 }
 
 function showResetModal() {
     $('#myModal').show();
     $('.modal-content').show();
-    $('.modalTextContent').text('Would you like to reset?')
+    // $('.modalTextContent').text('Would you like to reset?')
 }
 function closeModal() {
     $('#myModal').hide();

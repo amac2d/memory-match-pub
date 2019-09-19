@@ -4,72 +4,93 @@
 }
 
 body {
-  height: 98vh;
-  width: 98vw;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
   background: linear-gradient(rgba(255,255,255,.3),rgba(255,255,255,.3)),url(../images/track-wallpaper.jpg);
+  margin: 0;
 }
+
+body {}
 
 header {
   text-align: center;
   font-size: 5vw;
-  color: red;
+  color: tomato;
   font-family: formula1RegularFont;
+  /* border: solid 1px chartreuse; */
+  height: 10vh;
+  width: 100%;
 }
 
 .statsContainer {
-  color: blue;
-  text-align: center;
-  display: inline-block;
-  height: 88vh;
-  width: 14vw;
-  font-size: 3vw;
+  font-size: 2vw;
   font-family: formula1RegularFont;
+  display: flex;
+  /* border: solid 1px chartreuse; */
+  justify-content: space-evenly;
+  height: 5vh;
 }
 
 .stats > span {
-  margin: auto;
+  /* margin: auto; */
 }
 
 .stats {
-  font-size: 70%;
-  height: 14%;
+  /* font-size: 70%; */
+  /* height: 14%; */
   display: flex;
-  margin: 5px;
-  background-color: cornflowerblue;
+  /* margin: 5px; */
+  /* background-color: cornflowerblue; */
   opacity: .8;
+}
+
+.gamesPlayedStat {
+  color: crimson;
+}
+
+.attemptsStat {
+  color: yellow;
+}
+
+.accuracyStat {
+  color: lawngreen;
 }
 
 main {
   display: inline-block;
-  height: 88vh;
-  width: 82vw;
+  height: 85vh;
+  /* width: 86%; */
   vertical-align: top;
+  /* border: solid 1px chartreuse; */
+  display: flex;
+  flex-direction: column;
+  /* justify-content: space-around; */
 }
 
+main {}
+
 .cardContainer {
-  height: 29vh;
-  width: 82vw;
+  height: 33.33%;
   position: relative;
-  display: inline-block;
+  display: flex;
+  justify-content: space-evenly;
 }
 
 .card {
-  display: inline-block;
   height: 90%;
-  width: 13.5vw;
+  width: 14%;
 }
 
 .front {
   height: 90%;
-  width: 12vw;
+  width: 14%;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
   position: absolute;
   background-color: black;
+  border-radius: 8px;
 }
 
 div.lfz-card {
@@ -79,9 +100,9 @@ div.lfz-card {
   background-image: url(../images/f1-logo.jpg);
   position: absolute;
   height: 90%;
-  width: 12vw;
+  width: 14%;
   background-color: black;
-  border: solid blue 1px;
+  border-radius: 8px;
 }
 
 div.lfz-card:hover {
@@ -186,7 +207,7 @@ div.lfz-card:hover {
 
 .modal-content {
   background-color: black;
-  background: linear-gradient(rgba(255,255,255,.15),rgba(255,255,255,.15)),url(../images/track-wallpaper.jpg);
+  background: linear-gradient(rgba(255,255,255,.1),rgba(255,255,255,.1)),url(../images/finish.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -218,17 +239,38 @@ div.lfz-card:hover {
 .modalTextContent {
   color: crimson;
   text-align: center;
-  height: 60%;
+  height: 15%;
   font-size: 1.7rem;
   font-family: formula1RegularFont;
 }
 #resetButton {
   display: block;
   margin: auto;
+  height: 50%;
+  background: url(../images/ignition.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 45%;
+  width: 20%;
+  border-radius: 50px;
+  border: 0;
 }
 
 #resetButton:hover {
-  color: white;
-  background-color: cornflowerblue;
+  border: solid 2px black;
   cursor: pointer;
+}
+
+#myBtn {
+  color: black;
+}
+
+.myBtnDiv {
+  text-align: center;
+}
+
+.resetText {
+  color: coral;
+  text-align: center;
+  height: 15%;
 }
