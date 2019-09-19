@@ -207,7 +207,7 @@ div.lfz-card:hover {
 
 .modal-content {
   background-color: black;
-  background: linear-gradient(rgba(255,255,255,.6),rgba(255,255,255,.6)),url(../images/finish.jpg);
+  background: linear-gradient(rgba(255,255,255,.1),rgba(255,255,255,.1)),url(../images/finish.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -237,15 +237,21 @@ div.lfz-card:hover {
   cursor: pointer;
 }
 .modalTextContent {
-  color: black;
+  color: crimson;
   text-align: center;
-  height: 60%;
+  height: 25%;
   font-size: 1.7rem;
   font-family: formula1RegularFont;
 }
 #resetButton {
   display: block;
   margin: auto;
+  height: 50%;
+  background: linear-gradient(rgba(255,255,255,.25),rgba(255,255,255,.25)),url(../images/ignition.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: palegoldenrod;
+  font-size: 5vh;
 }
 
 #resetButton:hover {
