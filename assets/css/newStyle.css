@@ -257,7 +257,6 @@ div.lfz-card:hover {
 }
 
 #resetButton:hover {
-  border: solid 2px black;
   cursor: pointer;
 }
 
