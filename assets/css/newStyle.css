@@ -15,7 +15,7 @@ body {}
 
 header {
   text-align: center;
-  font-size: 5vw;
+  font-size: 8vh;
   color: tomato;
   font-family: formula1RegularFont;
   /* border: solid 1px chartreuse; */
@@ -24,7 +24,7 @@ header {
 }
 
 .statsContainer {
-  font-size: 2vw;
+  font-size: 3vh;
   font-family: formula1RegularFont;
   display: flex;
   /* border: solid 1px chartreuse; */
@@ -46,7 +46,7 @@ header {
 }
 
 .gamesPlayedStat {
-  color: crimson;
+  color: #b70023;
 }
 
 .attemptsStat {
@@ -257,7 +257,6 @@ div.lfz-card:hover {
 }
 
 #resetButton:hover {
-  border: solid 2px black;
   cursor: pointer;
 }
 
