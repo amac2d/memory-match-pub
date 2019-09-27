@@ -1,179 +1,275 @@
-body {
-    height: 700px;
-    width: 1050px;
-    margin: auto;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-image: url(../images/blind-robot.jpg);
+@font-face {
+  font-family: formula1RegularFont;
+  src: url(./fonts/Formula1-Regular.ttf)
 }
 
+body {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background: linear-gradient(rgba(255,255,255,.3),rgba(255,255,255,.3)),url(../images/track-wallpaper.jpg);
+  margin: 0;
+}
+
+body {}
+
 header {
-    text-align: center;
-    font-size: 50px;
-    height: 100px;
-    color: aquamarine;
+  text-align: center;
+  font-size: 8vh;
+  color: tomato;
+  font-family: formula1RegularFont;
+  /* border: solid 1px chartreuse; */
+  height: 10vh;
+  width: 100%;
 }
 
 .statsContainer {
-    border: 2px solid cornflowerblue;
-    color: aquamarine;
-    text-align: center;
-    display: inline-block;
-    height: 550px;
-    width: 200px;
-    font-size: 1.25rem;
+  font-size: 3vh;
+  font-family: formula1RegularFont;
+  display: flex;
+  /* border: solid 1px chartreuse; */
+  justify-content: space-evenly;
+  height: 5vh;
 }
 
 .stats > span {
-    margin: auto;
+  /* margin: auto; */
 }
 
 .stats {
-    font-size: 1.5rem;
-    border: 1px solid blue;
-    height: 76px;
-    display: flex;
-    margin: 5px;
-    background-color: cornflowerblue;
-    opacity: .8;
+  /* font-size: 70%; */
+  /* height: 14%; */
+  display: flex;
+  /* margin: 5px; */
+  /* background-color: cornflowerblue; */
+  opacity: .8;
+}
+
+.gamesPlayedStat {
+  color: #b70023;
+}
+
+.attemptsStat {
+  color: yellow;
+}
+
+.accuracyStat {
+  color: lawngreen;
 }
 
 main {
-    display: inline-block;
-    border: 2px solid cornflowerblue;
-    height: 550px;
-    width: 800px;
-    vertical-align: top;
+  display: inline-block;
+  height: 85vh;
+  /* width: 86%; */
+  vertical-align: top;
+  /* border: solid 1px chartreuse; */
+  display: flex;
+  flex-direction: column;
+  /* justify-content: space-around; */
 }
 
+main {}
+
 .cardContainer {
-    height: 32%;
-    margin: 4px;
-    position: relative;
+  height: 33.33%;
+  position: relative;
+  display: flex;
+  justify-content: space-evenly;
 }
 
 .card {
-    display: inline-block;
-    height: 90%;
-    width: 15%;
-    margin: 3px;
+  height: 90%;
+  width: 14%;
 }
 
 .front {
-    height: 90%;
-    width: 120px;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    position: absolute;
+  height: 90%;
+  width: 14%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: absolute;
+  background-color: black;
+  border-radius: 8px;
 }
 
 div.lfz-card {
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-image: url(../images/lfz-card.jpg);
-    position: absolute;
-    height: 90%;
-    width: 120px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url(../images/f1-logo.jpg);
+  position: absolute;
+  height: 90%;
+  width: 14%;
+  background-color: black;
+  border-radius: 8px;
 }
 
-div.dan-card {
-    background-image: url(../images/dan.jpg);
+div.lfz-card:hover {
+  border: solid red 3px;
 }
 
-div.andy-card {
-    background-image: url(../images/andy.jpg);
+.alexander-albon-card {
+  background-image: url(../images/alexander-albon.jpg)
 }
 
-div.bill-card {
-    background-image: url(../images/bill.jpg);
+.antonio-giovinazzi-card {
+  background-image: url(../images/antonio-giovinazzi.jpg)
 }
 
-div.brett-card {
-    background-image: url(../images/brett.jpg);
+.carlos-sainz-card {
+  background-image: url(../images/carlos-sainz.jpg)
 }
 
-div.cody-card {
-    background-image: url(../images/cody.jpg);
+.charles-leclerc-card {
+  background-image: url(../images/charles-leclerc.jpg)
 }
 
-div.scott-card {
-    background-image: url(../images/scott.jpg);
+.daniel-ricciardo-card {
+  background-image: url(../images/daniel-ricciardo.jpg)
 }
 
-div.timD-card {
-    background-image: url(../images/tim-d.jpg);
+.daniil-kvyat-card {
+  background-image: url(../images/daniil-kvyat.jpg)
 }
 
-div.timH-card {
-    background-image: url(../images/tim-h.jpg);
+.george-russell-card {
+  background-image: url(../images/george-russell.jpg)
 }
 
-div.tj-card {
-    background-image: url(../images/tj.jpg);
+.kevin-magnussen-card {
+  background-image: url(../images/kevin-magnussen.jpg)
 }
+
+.kimi-raikkonen-card {
+  background-image: url(../images/kimi-raikkonen.jpg)
+}
+
+.lance-stroll-card {
+  background-image: url(../images/lance-stroll.jpg)
+}
+
+.lando-norris-card {
+  background-image: url(../images/lando-norris.jpg)
+}
+
+.lewis-hamilton-card {
+  background-image: url(../images/lewis-hamilton.jpg)
+}
+
+.max-verstappen-card {
+  background-image: url(../images/max-verstappen.jpg)
+}
+
+.nico-hulkenberg-card {
+  background-image: url(../images/nico-hulkenberg.jpg)
+}
+
+.pierre-gasly-card {
+  background-image: url(../images/pierre-gasly.jpg)
+}
+
+.robert-kubica-card {
+  background-image: url(../images/robert-kubica.jpg)
+}
+
+.romain-grosjean-card {
+  background-image: url(../images/romain-grosjean.jpg)
+}
+
+.sebastian-vettel-card {
+  background-image: url(../images/sebastian-vettel.jpg)
+}
+
+.sergio-perez-card {
+  background-image: url(../images/sergio-perez.jpg)
+}
+
+.valtteri-bottas-card {
+  background-image: url(../images/valtteri-bottas.jpg)
+}
+
 
 .hidden {
-    display: none;
+  display: none;
 }
 
 .modal {
-    display: none;
-    position: fixed;
-    left: 0;
-    top: 0;
-    width: 100vw;
-    height: 100vh;
-    background-color: black;
-    opacity: .5;
+  display: none;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: black;
+  opacity: .5;
 }
 
 .modal-content {
-    background-color: black;
-    background-image: url("../images/blind-robot.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    margin: 15% auto;
-    padding: 20px;
-    border: 1px solid #888;
-    width: 30%;
-    height: 25%;
-    position: absolute;
-    left: 50%;
-    top: 10%;
-    transform: translateX(-50%) translateY(-50%);
-    display: none;
+  background-color: black;
+  background: linear-gradient(rgba(255,255,255,.1),rgba(255,255,255,.1)),url(../images/finish.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 50%;
+  height: 35%;
+  position: absolute;
+  left: 50%;
+  top: 10%;
+  transform: translateX(-50%) translateY(-50%);
+  display: none;
 }
 
 .close {
-    color: #aaa;
-    float: right;
-    font-size: 28px;
-    font-weight: bold;
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
 }
 
 .close:hover,
 .close:focus {
-    color: black;
-    text-decoration: none;
-    cursor: pointer;
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
 }
 .modalTextContent {
-    color: yellow;
-    text-align: center;
-    height: 60%;
-    font-size: 1.7rem;
+  color: crimson;
+  text-align: center;
+  height: 15%;
+  font-size: 1.7rem;
+  font-family: formula1RegularFont;
 }
 #resetButton {
-    display: block;
-    margin: auto;
+  display: block;
+  margin: auto;
+  height: 50%;
+  background: url(../images/ignition.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 45%;
+  width: 20%;
+  border-radius: 50px;
+  border: 0;
 }
 
 #resetButton:hover {
-    color: white;
-    background-color: cornflowerblue;
-    cursor: pointer;
+  cursor: pointer;
+}
+
+#myBtn {
+  color: black;
+}
+
+.myBtnDiv {
+  text-align: center;
+}
+
+.resetText {
+  color: coral;
+  text-align: center;
+  height: 15%;
 }
